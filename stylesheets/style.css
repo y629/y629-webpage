@@ -1,0 +1,74 @@
+html {
+  position: relative;
+}
+
+.container#contents-all {
+  margin: 1rem auto;
+  border-style: groove;
+  border-radius: 5px;
+  border-color: #70769d;
+  background-color: #0000cd;
+
+  /* MainContents部分をフェードインさせる */
+  animation-name: fadein;
+  animation-duration: 1.5s;
+}
+
+.container h1 {
+  color: #eeee00;
+  margin-left: 14.5px;
+}
+
+/* フェードインの設定 */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+img#toppic {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #444;
+}
+
+.table {
+  color: #eee;
+}
+
+.table td {
+  word-break : break-all; /* 表のセル内で文字を折り返す */
+}
+
+.table#profile-table {
+  margin: 0 15px 5px 0;
+}
+
+.table#education-table, .table#contacts-table {
+  margin: 5px 15px;
+}
+
+
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-color: #b3b3cc;
+  padding-top: 10px;
+}
+
+a#goback {
+  font-size: 18px;
+  color: #0000cd;
+  margin-left: 15px;
+}
+
+p#copyright {
+  font-size: 9px;
+  color: #eee;
+  text-align: center;
+  margin-top: 10px;
+}
