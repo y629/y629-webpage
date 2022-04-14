@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yuta Ishimoto</title>
+  <title>Yuta Ishimoto's Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
   <!-- Header -->
-  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #b3b3cc; padding-bottom: 10px;">
-    <span class="navbar-brand mb-0 h1">Yuta Ishimoto's Profile<br><div class="mb-0" style="font-size: 9px;">POSL Member Page</div></span>
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #222; padding-bottom: 10px; font-family: sans-serif;">
+    <span class="navbar-brand mb-0 h1">Yuta Ishimoto's Page
+    <!-- <br><div class="mb-0" style="font-family: sans-serif; font-size: 9px;">POSL Member Page</div></span> -->
   </nav>
   <!-- MainContents -->
   <div class="container" id="contents-all">
@@ -21,11 +22,11 @@
         <div class="container" id="profile-all">
           <div class="row">
             <!-- MyImage -->
-            <div class="col-md-3">
-              <img src="img/toppic.jpg" class="img-fluid"　alt="toppic" id="toppic">
+            <div class="col-md-4">
+              <img src="img/toppic.jpg" class="img-fluid" alt="toppic" id="toppic">
             </div>
             <!-- ProfileTable -->
-            <div class="col-md-9">
+            <div class="col-md-8">
               <table class="table" id="profile-table">
                 <tr>
                   <th scope="row">Name</th>
@@ -33,26 +34,59 @@
                 </tr>
                 <tr>
                   <th scope="row">Date of birth</td>
-                  <td>1998.06.29</td>
+                  <td>1998/06/29</td>
                 </tr>
                 <tr>
                   <th scope="row">Affiliation</th>
-                  <td>九州大学工学部 電気情報工学科 鵜林研究室</td>
+                  <td>九州大学大学院システム情報科学府 情報理工学専攻 鵜林・亀井研究室</td>
                 </tr>
                 <tr>
                   <th scope="row">Year</td>
-                  <td>B4</td>
+                  <td>M2（修士2年）</td>
                 </tr>
                 <tr>
                   <th scope="row">E-mail</td>
-                  <td>ishimoto[at]posl.ait.kyushu-u.ac.jp</td>
+                  <td>ishimoto🌟posl.ait.kyushu-u.ac.jp（🌟はアットマークで置き換え）</td>
+                </tr>
+                <tr>
+                  <th scope="row">Links</td>
+                  <td>
+                    <a href="https://github.com/y629" target="_blank">GitHub</a>&nbsp; &nbsp;
+                    <a href="https://qiita.com/y629" target="_blank">Qiita</a>
+                  </td>
                 </tr>
               </table>
             </div>
           </div>
         </div>
       <!-- 画面幅に応じたマージンを入れる -->
-      <div class="mb-md-5 mb-sm-2"></div>
+      <div class="mb-md-3 mb-sm-2"></div>
+      <!-- News -->
+      <h1>News</h1>
+      <div class="container" id="education-all">
+        <div class="row">
+          <!-- EducationTable -->
+          <table class="table" id="education-table">
+            <tr>
+              <th scope="row">2021.3</th>
+              <td>
+                第207回ソフトウェア工学研究発表会（SIGSE）で発表（題目「RNNの抽象化モデルに対するバグ限局とその評価」）<br>
+                同発表は<b>学生研究賞</b>を受賞&nbsp;[<a href="https://www.ipsj.or.jp/award/se-award1.html" target="_blank">詳細</a>]
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2021.6</th>
+              <td><b>情報処理学会2021年度コンピュータサイエンス領域奨励賞</b>を受賞（第207回SIGSEの発表に対して）&nbsp;[<a href="https://www.ipsj.or.jp/award/cs-awardee-2021.html" target="_blank">詳細</a>]</td>
+            </tr>
+            <tr>
+              <th scope="row">2021.11</th>
+              <td>第2回次世代ソフトウェアエコシステムワークショップでポスター発表</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- 画面幅に応じたマージンを入れる -->
+      <div class="mb-md-3 mb-sm-2"></div>
       <!-- Education -->
       <h1>Education</h1>
         <div class="container" id="education-all">
@@ -69,13 +103,21 @@
               </tr>
               <tr>
                 <th scope="row">2020.4</th>
-                <td>九州大学工学部 電気情報工学科 鵜林研究室 配属</td>
+                <td>鵜林・亀井研究室 配属</td>
+              </tr>
+              <tr>
+                <th scope="row">2021.3</th>
+                <td>九州大学工学部 電気情報工学科 卒業</td>
+              </tr>
+              <tr>
+                <th scope="row">2021.4</th>
+                <td>九州大学大学院システム情報科学府 情報理工学専攻 入学</td>
               </tr>
             </table>
           </div>
         </div>
       <!-- 画面幅に応じたマージンを入れる -->
-      <div class="mb-md-5 mb-sm-2"></div>
+      <div class="mb-md-3 mb-sm-2"></div>
       <!-- Contacts -->
       <h1>Contacts</h1>
       <div class="container" id="contacts-all">

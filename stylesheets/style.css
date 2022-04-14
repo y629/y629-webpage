@@ -5,38 +5,60 @@ html {
 .container#contents-all {
   margin: 1rem auto;
   border-style: groove;
-  border-radius: 5px;
-  border-color: #70769d;
-  background-color: #0000cd;
-
-  /* MainContents部分をフェードインさせる */
-  animation-name: fadein;
-  animation-duration: 1.5s;
+  border-radius: 15px;
+  border-color: #222;
+  border-width: 2px;
+  background-color: #eee;
 }
 
 .container h1 {
-  color: #eeee00;
+  color: #111;
   margin-left: 14.5px;
 }
 
-/* フェードインの設定 */
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-      opacity: 1;
+@media screen and (max-width: 768px) { 
+  img#toppic {
+    border-style: groove;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: #222;
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }      
+}
+@media screen and (min-width:768px) {
+  img#toppic {
+    border-style: groove;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: #222;
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
   }
 }
 
-img#toppic {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #444;
-}
 
 .table {
-  color: #eee;
+  color: #333;
+  table-layout:fixed;
+}
+
+@media screen and (max-width: 768px) {
+  .table th {
+      width: 30%;
+    }
+}
+@media screen and (min-width:768px) {
+  .table th {
+    width: 20%;
+  }
 }
 
 .table td {
@@ -44,10 +66,10 @@ img#toppic {
 }
 
 .table#profile-table {
-  margin: 0 15px 5px 0;
+  margin: 5px 15px 5px 0;
 }
 
-.table#education-table, .table#contacts-table {
+.table#education-table, .table#contacts-table, .table#news-table{
   margin: 5px 15px;
 }
 
@@ -56,13 +78,13 @@ img#toppic {
   position: absolute;
   width: 100%;
   height: 80px;
-  background-color: #b3b3cc;
+  background-color: #222;
   padding-top: 10px;
 }
 
 a#goback {
   font-size: 18px;
-  color: #0000cd;
+  color: #eee;
   margin-left: 15px;
 }
 
