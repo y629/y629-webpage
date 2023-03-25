@@ -16,6 +16,29 @@ html {
   margin-left: 14.5px;
 }
 
+.container h3 {
+  color: #111;
+  margin-left: 14.5px;
+}
+
+/* タブの色変更 */
+.nav-pills .nav-link.active {
+  background-color: #7A81FF;
+  /* color: #7A81FF; */
+}
+
+/* タブの文字色変更 */
+.nav-pills .nav-link {
+  color: #222;
+  /* color: #7A81FF; */
+}
+
+/* アクティブじゃないタブ名のマウスオーバー時 */
+.nav-pills .nav-link:not(.active):hover {
+  color: #7A81FF;
+  /* color: #7A81FF; */
+}
+
 @media screen and (max-width: 768px) { 
   img#toppic {
     border-style: groove;
@@ -69,7 +92,7 @@ html {
   margin: 5px 15px 5px 0;
 }
 
-.table#education-table, .table#contacts-table, .table#news-table{
+.table#education-table, .table#contacts-table, .table#news-table {
   margin: 5px 15px;
 }
 

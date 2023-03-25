@@ -5,160 +5,267 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yuta Ishimoto's Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://y629.github.io/y629-webpage/stylesheets/style.css">
-  <!-- <link rel="stylesheet" href="stylesheets/style.css"> -->
+  <!-- <link rel="stylesheet" href="https://y629.github.io/y629-webpage/stylesheets/style.css"> -->
+  <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
   <!-- Header -->
-  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #222; padding-bottom: 10px; font-family: sans-serif;">
-    <a class="navbar-brand" href="#"><b>Yuta Ishimoto's Page</b></a>
+  <nav class="navbar navbar-expand-sm navbar-dark" style="padding-bottom: 10px;">
+    <!-- <a class="navbar-brand" href="#" style="color: #7A81FF; font-weight: bolder;"><b>Yuta Ishimoto's Page</b></a> -->
+    <a href="#" style="text-decoration:underline dotted #222;"><h3 style="color: #7A81FF; font-weight: bolder;">Yuta Ishimoto's Page</h3></a>
   </nav>
-  <!-- MainContents -->
+  <!-- AllContents -->
   <div class="container" id="contents-all">
-    <div class="main-contents">
-      <div class="mt-2"></div>
-      <!-- Profile -->
-      <h1>Profile</h1>
-        <div class="container" id="profile-all">
-          <div class="row">
-            <!-- MyImage -->
-            <div class="col-md-4">
-              <img src="img/toppic.jpg" class="img-fluid" alt="toppic" id="toppic">
-            </div>
-            <!-- ProfileTable -->
-            <div class="col-md-8">
-              <table class="table" id="profile-table">
-                <tr>
-                  <th scope="row">Name</th>
-                  <td>石本 優太 / Yuta Ishimoto</td>
-                </tr>
-                <tr>
-                  <th scope="row">Date of birth</td>
-                  <td>1998/06/29</td>
-                </tr>
-                <tr>
-                  <th scope="row">Affiliation</th>
-                  <td>九州大学大学院システム情報科学府 情報理工学専攻 鵜林・亀井研究室</td>
-                </tr>
-                <tr>
-                  <th scope="row">Year</td>
-                  <td>M2（修士2年）</td>
-                </tr>
-                <tr>
-                  <th scope="row">Research</td>
-                  <td>機械学習のためのソフトウェア工学（MLSE, SE4AI），特に，機械学習モデルのバグ限局や修正手法について
-                </tr>
-                <tr>
-                  <th scope="row">E-mail</td>
-                  <td>ishimoto🌟posl.ait.kyushu-u.ac.jp（🌟はアットマークで置き換え）</td>
-                </tr>
-              </table>
+    <!-- Navigation tabs -->
+    <div class="mt-2"></div>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a data-toggle="pill" class="nav-link active" aria-current="page" href="#tab-main">About me</a>
+      </li>
+      <li class="nav-item">
+        <a data-toggle="pill" class="nav-link" href="#tab-publications">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a data-toggle="pill" class="nav-link" href="#tab-education">Education</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <!-- About Me -->
+      <div class="tab-pane fade show active" id="tab-main">
+        <div class="mt-2"></div>
+        <!-- Profile -->
+          <div class="container" id="profile-all">
+            <div class="row">
+              <!-- MyImage -->
+              <div class="col-md-4">
+                <img src="img/toppic.jpg" class="img-fluid" alt="toppic" id="toppic">
+              </div>
+              <!-- ProfileTable -->
+              <div class="col-md-8">
+                <table class="table" id="profile-table">
+                  <tr>
+                    <th scope="row">Name</th>
+                    <td>石本 優太 / Yuta Ishimoto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Date of birth</td>
+                    <td>1998/06/29</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Affiliation</th>
+                    <td>九州大学大学院システム情報科学府 情報理工学専攻 鵜林・亀井研究室</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Year</td>
+                    <td>D1（博士1年）</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Research</td>
+                    <td>機械学習のためのソフトウェア工学（MLSE, SE4AI），特に，機械学習モデルのバグ限局や修正手法について
+                  </tr>
+                  <tr>
+                    <th scope="row">E-mail</td>
+                    <td>ishimoto🌟posl.ait.kyushu-u.ac.jp（🌟はアットマークで置き換え）</td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
-        </div>
-      <!-- 画面幅に応じたマージンを入れる -->
-      <!-- <div class="mb-md-3 mb-sm-2"></div> -->
-      <!-- News -->
-      <h1>News</h1>
-      <div class="container" id="education-all">
-        <div class="row">
-          <!-- EducationTable -->
-          <table class="table" id="education-table">
-            <tr>
-              <th scope="row">2022.11</th>
-              <td>IF付き国際論文誌に論文採択
-                <br>
-                <b>Yuta Ishimoto</b>, Masanari Kondo, Naoyasu Ubayashi, Yasutaka Kamei, “PAFL: Probabilistic Automaton-based Fault Localization for Recurrent Neural Networks,” Information and Software Technology, Volume 155, 2023. (IF (2021): 3.862), <a href="https://doi.org/10.1016/j.infsof.2022.107117" target="_blank">https://doi.org/10.1016/j.infsof.2022.107117</a>.
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2022.10</th>
-              <td>情報処理学会誌2022年11月号の特集記事執筆
-                <br>
-                石本 優太, 近藤 将成, 亀井 靖高, 鵜林 尚靖, AIの品質保証：5. ニューラルネットワークモデルのバグ限局・自動修正技術, 情報処理, 63(11), e28-e33 (2022-10-15) [<a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=220374&item_no=1&page_id=13&block_id=8" target="_blank">詳細</a>]</td>
-            </tr>
-            <tr>
-              <th scope="row">2022.09 - 2022.10</th>
-              <td>1ヶ月間カナダ・アルバータ大学の Lei Ma 准教授の研究室に滞在</td>
-            </tr>
-            <tr>
-              <th scope="row">2022.07</th>
-              <td>ソフトウェアサイエンス研究会（SIGSS）で発表（題目「確率的オートマトンとn-gramに基づくRNNに対するバグ限局」）&nbsp;[<a href="https://ken.ieice.org/ken/paper/20220729XCLV/" target="_blank">詳細</a>]</td>
-            </tr>
-            <tr>
-              <th scope="row">2022.06</th>
-              <td>第5回機械学習工学研究会でポスター発表 &nbsp;[<a href="https://mlxse.connpass.com/event/248383/" target="_blank">詳細</a>]</td>
-            </tr>
-            <tr>
-              <th scope="row">2021.11</th>
-              <td>第2回次世代ソフトウェアエコシステムワークショップでポスター発表</td>
-            </tr>
-            <tr>
-              <th scope="row">2021.06</th>
-              <td><b>情報処理学会2021年度コンピュータサイエンス領域奨励賞</b>を受賞（第207回SIGSEの発表に対して）&nbsp;[<a href="https://www.ipsj.or.jp/award/cs-awardee-2021.html" target="_blank">詳細</a>]</td>
-            </tr>
-            <tr>
-              <th scope="row">2021.03</th>
-              <td>
-                第207回ソフトウェア工学研究発表会（SIGSE）で発表（題目「RNNの抽象化モデルに対するバグ限局とその評価」）&nbsp;[<a href="https://ipsj.ixsq.nii.ac.jp/ej/index.php?active_action=repository_view_main_item_detail&page_id=13&block_id=8&item_id=209659&item_no=1" target="_blank">詳細</a>]<br>
-                同発表は<b>学生研究賞</b>を受賞&nbsp;[<a href="https://www.ipsj.or.jp/award/se-award1.html" target="_blank">詳細</a>]
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <!-- 画面幅に応じたマージンを入れる -->
-      <div class="mb-md-3 mb-sm-2"></div>
-      <!-- Education -->
-      <h1>Education</h1>
+        <!-- 画面幅に応じたマージンを入れる -->
+        <!-- <div class="mb-md-3 mb-sm-2"></div> -->
+        <!-- News -->
+        <h3>News</h3>
         <div class="container" id="education-all">
           <div class="row">
             <!-- EducationTable -->
             <table class="table" id="education-table">
               <tr>
-                <th scope="row">2021.4</th>
-                <td>九州大学大学院システム情報科学府 情報理工学専攻 入学</td>
+                <th scope="row">2023.03</th>
+                <td>SE4AIに関する国際会議 (CAIN2023; 2nd International Conference on AI Engineering – Software Engineering for AI) に論文採択
+                  <br>
+                  <b>Yuta Ishimoto</b>, Ken Matsui, Masanari Kondo, Naoyasu Ubayashi, Yasutaka Kamei, An Initial Analysis of Repair and Side-effect Prediction for Neural Networks, In Proceedings of the 2nd International Conference on AI Engineering - Software Engineering for AI, 2023.
+                </td>
               </tr>
               <tr>
-                <th scope="row">2021.3</th>
-                <td>九州大学工学部 電気情報工学科 卒業</td>
+                <th scope="row">2022.11</th>
+                <td>IF付き国際論文誌に論文採択
+                  <br>
+                  <b>Yuta Ishimoto</b>, Masanari Kondo, Naoyasu Ubayashi, Yasutaka Kamei, “PAFL: Probabilistic Automaton-based Fault Localization for Recurrent Neural Networks,” Information and Software Technology, Volume 155, Article number: 107117, 2023. (IF (2021): 3.862), <a href="https://doi.org/10.1016/j.infsof.2022.107117" target="_blank">https://doi.org/10.1016/j.infsof.2022.107117</a>.
+                </td>
               </tr>
               <tr>
-                <th scope="row">2020.4</th>
-                <td>鵜林・亀井研究室 配属</td>
+                <th scope="row">2022.10</th>
+                <td>情報処理学会誌2022年11月号の特集記事執筆
+                  <br>
+                  石本 優太, 近藤 将成, 亀井 靖高, 鵜林 尚靖, AIの品質保証：5. ニューラルネットワークモデルのバグ限局・自動修正技術, 情報処理, 63(11), e28-e33 (2022-10-15) [<a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=220374&item_no=1&page_id=13&block_id=8" target="_blank">詳細</a>]</td>
               </tr>
               <tr>
-                <th scope="row">2019.4</th>
-                <td>九州大学工学部 電気情報工学科 編入学</td>
+                <th scope="row">2022.09 - 2022.10</th>
+                <td>1ヶ月間カナダ・アルバータ大学の Lei Ma 准教授の研究室に滞在</td>
               </tr>
               <tr>
-                <th scope="row">2019.3</th>
-                <td>福井工業高等専門学校 電子情報工学科 卒業</td>
+                <th scope="row">2022.07</th>
+                <td>ソフトウェアサイエンス研究会（SIGSS）で発表（題目「確率的オートマトンとn-gramに基づくRNNに対するバグ限局」）&nbsp;[<a href="https://ken.ieice.org/ken/paper/20220729XCLV/" target="_blank">詳細</a>]<br>
+                同発表は<b>令和4年度電子情報通信学会ソフトウェアサイエンス研究会研究奨励賞</b>を受賞&nbsp;[<a href="https://www.ieice.org/iss/ss/award.html" target="_blank">詳細</a>]
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2022.06</th>
+                <td>第5回機械学習工学研究会（MLSE夏合宿2022）でポスター発表 &nbsp;[<a href="https://mlxse.connpass.com/event/248383/" target="_blank">詳細</a>]</td>
+              </tr>
+              <tr>
+                <th scope="row">2022.01</th>
+                <td>九州大学 先導的人材育成フェローシップ事業(情報・AI分野) 予約採用</td>
+              </tr>
+              <tr>
+                <th scope="row">2021.11</th>
+                <td>第2回次世代ソフトウェアエコシステムワークショップでポスター発表</td>
+              </tr>
+              <tr>
+                <th scope="row">2021.06</th>
+                <td><b>情報処理学会2021年度コンピュータサイエンス領域奨励賞</b>を受賞（第207回SIGSEの発表に対して）&nbsp;[<a href="https://www.ipsj.or.jp/award/cs-awardee-2021.html" target="_blank">詳細</a>]</td>
+              </tr>
+              <tr>
+                <th scope="row">2021.03</th>
+                <td>
+                  第207回ソフトウェア工学研究発表会（SIGSE）で発表（題目「RNNの抽象化モデルに対するバグ限局とその評価」）&nbsp;[<a href="https://ipsj.ixsq.nii.ac.jp/ej/index.php?active_action=repository_view_main_item_detail&page_id=13&block_id=8&item_id=209659&item_no=1" target="_blank">詳細</a>]<br>
+                  同発表は<b>学生研究賞</b>を受賞&nbsp;[<a href="https://www.ipsj.or.jp/award/se-award1.html" target="_blank">詳細</a>]
+                </td>
               </tr>
             </table>
           </div>
         </div>
-      <!-- 画面幅に応じたマージンを入れる -->
-      <div class="mb-md-3 mb-sm-2"></div>
-      <!-- Contacts -->
-      <h1>Contacts (lab)</h1>
-      <div class="container" id="contacts-all">
-        <div class="row">
-          <!-- ContactsTable -->
-          <table class="table" id="contacts-table">
-            <tr>
-              <th scope="row">Address</th>
-              <td>〒819-0395 福岡市西区元岡744番地 ウエスト2号館810号室</td>
-            </tr>
-            <tr>
-              <th scope="row">Tel</th>
-              <td>092-802-3606</td>
-            </tr>
-          </table>
+        <!-- 画面幅に応じたマージンを入れる -->
+        <div class="mb-md-3 mb-sm-2"></div>
+        <!-- Contacts -->
+        <h3>Contacts (lab)</h3>
+        <div class="container" id="contacts-all">
+          <div class="row">
+            <!-- ContactsTable -->
+            <table class="table" id="contacts-table">
+              <tr>
+                <th scope="row">Address</th>
+                <td>〒819-0395 福岡市西区元岡744番地 ウエスト2号館810号室</td>
+              </tr>
+              <tr>
+                <th scope="row">Tel</th>
+                <td>092-802-3606</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- 画面幅に応じたマージンを入れる -->
+        <div class="mb-md-3 mb-sm-2"></div>
+      </div>
+      <!-- Publications -->
+      <div class="tab-pane fade show" id="tab-publications">
+        <div class="mt-2"></div>
+        <div id="publications">
+          <div class="container" id="publications-all">
+            <!-- Journal -->
+            <div class="row"><h3>Journal Papers</h3></div>
+            <ul>
+              <li>
+                <b>Yuta Ishimoto</b>, Masanari Kondo, Naoyasu Ubayashi, Yasutaka Kamei, “PAFL: Probabilistic Automaton-based Fault Localization for Recurrent Neural Networks, Information and Software Technology,” Volume 155, Article number: 107117, 2023. (IF (2021): 3.862).&nbsp;[<a href="https://www.sciencedirect.com/sdfe/reader/pii/S0950584922002269/pdf" target="_blank">PDF</a>]
+              </li>
+            </ul>
+            <!-- Conference -->
+            <div class="row"><h3>Conference Proceedings</h3></div>
+            <ul>
+              <li>
+                <b>Yuta Ishimoto</b>, Ken Matsui, Masanari Kondo, Naoyasu Ubayashi, Yasutaka Kamei, “An Initial Analysis of Repair and Side-effect Prediction for Neural Networks,” In Proceedings of the 2nd International Conference on AI Engineering - Software Engineering for AI, 2023 (accepted, to appear).&nbsp;[PDF]
+              </li>
+            </ul>
+            <!-- Awards -->
+            <div class="row"><h3>Awards</h3></div>
+            <ul>
+              <li>
+                <b>石本 優太</b>, <a target="_blank" href="https://www.ieice.org/iss/ss/award.html">令和4年度電子情報通信学会ソフトウェアサイエンス研究会研究奨励賞</a>
+                (<b>石本 優太</b>, 近藤 将成, 鵜林 尚靖, 亀井靖高, “確率的オートマトンとn-gramに基づくRNNに対するバグ限局,” 電子情報通信学会技術報告 (ソフトウェアサイエンス研究会), vol.122, no.138(SS), pp.55-60, 2022年7月.)
+              </li>
+              <li>
+                <b>石本 優太</b>, <a target="_blank" href="https://www.ipsj.or.jp/award/cs-award-2021.html">情報処理学会2021年度コンピュータサイエンス領域奨励賞</a>
+                (<b>石本 優太</b>, 松井 健, 鵜林 尚靖, 亀井 靖高, “RNNの抽象化モデルに対するバグ限局とその評価,” 第207回ソフトウェア工学研究発表会, 2021-SE-207(2), pp.1-8, 2021年3月.)
+              </li>
+              <li>
+                <b>石本 優太</b>, <a target="_blank" href="https://www.sigse.jp/award.html">第207回ソフトウェア工学研究会  学生研究賞</a>
+                (<b>石本 優太</b>, 松井 健, 鵜林 尚靖, 亀井 靖高, “RNNの抽象化モデルに対するバグ限局とその評価,” 第207回ソフトウェア工学研究発表会, 2021-SE-207(2), pp.1-8, 2021年3月.)
+              </li>
+            </ul>
+            <!-- Workshops -->
+            <div class="row"><h3>Workshops</h3></div>
+            <ul>
+              <li>
+                <b>石本 優太</b>, 近藤 将成, 鵜林 尚靖, 亀井靖高, “確率的オートマトンとn-gramに基づくRNNに対するバグ限局,” 電子情報通信学会技術報告 (ソフトウェアサイエンス研究会), vol.122, no.138(SS), pp.55-60, 2022年7月.&nbsp;[<a href="https://ken.ieice.org/ken/paper/20220729XCLV/" target="_blank">詳細</a>]
+              </li>
+              <li>
+                <b>Yuta Ishimoto</b>, Masanari Kondo, Naoyasu Ubayashi, Yasutaka Kamei, “抽象モデル上のn-gramに着目したRNNに対するFault Localization,” 第5回機械学習工学研究会 (MLSE夏合宿2022), 2022年6月. (ポスター発表のみ)&nbsp;[<a href="https://mlxse.connpass.com/event/248383/" target="_blank">詳細</a>]
+              </li>
+              <li>
+                <b>石本 優太</b>, 松井 健, 鵜林 尚靖, 亀井 靖高, “RNNの抽象化モデルに対するバグ限局とその評価,” 第207回ソフトウェア工学研究発表会, 2021-SE-207(2), pp.1-8, 2021年3月.&nbsp;[<a href="https://ipsj.ixsq.nii.ac.jp/ej/index.php?active_action=repository_view_main_item_detail&page_id=13&block_id=8&item_id=209659&item_no=1" target="_blank">詳細</a>]
+              </li>
+            </ul>
+            <!-- Others -->
+            <div class="row"><h3>Others</h3></div>
+            <ul>
+              <li>
+                <b>石本 優太</b>, 近藤 将成, 亀井 靖高, 鵜林 尚靖, “AIの品質保証：5. ニューラルネットワークモデルのバグ限局・自動修正技術,” 情報処理, 63(11), e28-e33 (2022-10-15)&nbsp;[<a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=220374&item_no=1&page_id=13&block_id=8" target="_blank">詳細</a>]</td>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 画面幅に応じたマージンを入れる -->
+        <div class="mb-md-3 mb-sm-2"></div>
+      </div>
+      <!-- Education -->
+      <div class="tab-pane fade show" id="tab-education">
+        <div class="mt-2"></div>
+        <div id="education">
+          <!-- <h1>Education</h1> -->
+          <div class="container" id="education-all">
+            <div class="row">
+              <!-- EducationTable -->
+              <table class="table" id="education-table">
+                <tr>
+                  <th scope="row">2023.4</th>
+                  <td>九州大学大学院システム情報科学府 情報理工学専攻 博士課程 入学</td>
+                </tr>
+                <tr>
+                  <th scope="row">2023.3</th>
+                  <td>九州大学大学院システム情報科学府 情報理工学専攻 修士課程 修了（修士（工学））</td>
+                </tr>
+                <tr>
+                  <th scope="row">2021.4</th>
+                  <td>九州大学大学院システム情報科学府 情報理工学専攻 修士課程 入学</td>
+                </tr>
+                <tr>
+                  <th scope="row">2021.3</th>
+                  <td>九州大学工学部 電気情報工学科 卒業（学士（工学））</td>
+                </tr>
+                <tr>
+                  <th scope="row">2020.4</th>
+                  <td>鵜林・亀井研究室 配属</td>
+                </tr>
+                <tr>
+                  <th scope="row">2019.4</th>
+                  <td>九州大学工学部 電気情報工学科 編入学（3年次編入）</td>
+                </tr>
+                <tr>
+                  <th scope="row">2019.3</th>
+                  <td>福井工業高等専門学校 電子情報工学科 卒業</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        <!-- 画面幅に応じたマージンを入れる -->
+        <div class="mb-md-3 mb-sm-2"></div>
         </div>
       </div>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 <!-- footer -->
 <footer class="footer">
