@@ -26,22 +26,38 @@ html {
   margin-left: 15.5px;
 }
 
-/* タブの色変更 */
-.nav-pills .nav-link.active {
-  background-color: #7A81FF;
-  /* color: #7A81FF; */
+.nav-pills {
+  content: center;
 }
 
 /* タブの文字色変更 */
 .nav-pills .nav-link {
   color: #222;
-  /* color: #7A81FF; */
+}
+
+/* アクティブなタブの色変更 */
+.nav-pills .nav-link.active {
+  background-color: #7A81FF;
+  border-color: darkorange;
+  border-style: groove;
+  /* border-radius: 15px; */
+  border-width: 1px;
+}
+
+.nav-pills .nav-link:not(.active) {
+  background-color: #ccc;
+  /* border-color: #222;
+  border-style: groove; */
+  /* border-radius: 15px; */
+  /* border-width: 1px; */
 }
 
 /* アクティブじゃないタブ名のマウスオーバー時 */
 .nav-pills .nav-link:not(.active):hover {
-  color: #7A81FF;
   /* color: #7A81FF; */
+  border-color: darkorange;
+  border-style: groove;
+  border-width: 1px;
 }
 
 @media screen and (max-width: 768px) { 
