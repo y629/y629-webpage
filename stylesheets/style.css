@@ -21,6 +21,11 @@ html {
   margin-left: 14.5px;
 }
 
+.container p {
+  color: #111;
+  margin-left: 15.5px;
+}
+
 /* タブの色変更 */
 .nav-pills .nav-link.active {
   background-color: #7A81FF;
